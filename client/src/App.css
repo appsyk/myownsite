@@ -1,0 +1,98 @@
+body{
+  margin: 0.9vh;
+}
+.imgbac{
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-image: linear-gradient( to right, rgba(189, 240, 107, 0.753), rgba(0, 128, 79, 0.63) ),url('https://www.larutadelsorigens.cat/wallpic/full/36-364649_bts-bts-the-most-beautiful-moment-in-life.jpg');
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+.butt,
+  butt:visited,
+  butt:link{
+  background-color: aliceblue;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: darkslategray
+}
+
+.button-sign{
+  margin-left: 10%;
+  padding: 1vh 2vh;
+}
+/* .button-sign:hover{
+  margin-top: 1vh;
+
+}
+.button-log:hover{
+  margin-top: 1vh;
+
+} */
+.button-log{
+  padding: 1vh 3vh;
+}
+.move-top{
+  animation: moveInTop 1s ease-out ;
+}
+.move-right{
+  animation: moveInRight 1s ease-out;
+}
+.move-left{
+  animation: moveInLeft 1s ease-out;
+}
+
+.header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-text{
+  text-transform: capitalize;
+  font-size: 10vh;
+  letter-spacing: 1vh;
+}
+
+@keyframes moveInRight{
+  0%{
+     opacity: 0;
+     transform: translateX(100px);
+  }
+  80%{
+      transform: translateX(-10px)
+  }
+  100%{
+     opacity: 1;
+     transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft{
+  0%{
+     opacity: 0;
+     transform: translateX(-100px);
+  }
+  80%{
+      transform: translateX(10px)
+  }
+  100%{
+     opacity: 1;
+     transform: translate(0);
+  }
+}
+
+ @keyframes moveInTop{
+   0%{
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+   100%{
+      opacity: 1;
+      transform: translate(0);
+   }
+ }
+
+/*    */
